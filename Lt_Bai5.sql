@@ -115,7 +115,6 @@ begin
 select student.name, test.name, (case when mark > 5 then 'qua môn'  when mark < 5 then ' trượt ' else 'chưa thi' end ) as 'học lực '
 from studenttest join test on studenttest.testid = test.testid
              right join student on studenttest.RN = student.RN;
-
 end$$
 
 
